@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="北航马协点将台，北京航空航天大学马拉松协会中长跑与耐力纪录展示页。"
+    />
+    <title>北航马协点将台</title>
+    <link rel="icon" type="image/png" href="buaa-logo.png" />
+    <link rel="preload" as="image" href="buaa-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="ambient ambient-three" aria-hidden="true"></div>
+
+    <main class="site-shell">
+      <section class="hero glass-panel">
+        <div class="hero-main">
+          <div class="brand-lockup">
+            <div class="logo-orb">
+              <img src="buaa-logo.png" alt="北京航空航天大学校徽" class="brand-logo" />
+            </div>
+            <div class="brand-copy">
+              <p class="eyebrow">BEIHANG UNIVERSITY MARATHON ASSOCIATION</p>
+              <h1>北航马协点将台</h1>
+              <p class="hero-text">
+                北京航空航天大学马拉松协会纪录展示页。包括公路、场地、高百与超长距离挑战成绩，
+                所有成绩均为在校期间跑出。
+              </p>
+              <div class="hero-actions">
+                <a class="primary-link" href="#records">查看纪录</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="spotlight-card">
+            <p class="spotlight-label">RECORD BOARD</p>
+            <strong class="spotlight-value" data-spotlight="count">20</strong>
+            <p class="spotlight-text">条协会荣誉纪录，按项目展示。</p>
+            <div class="spotlight-meta">
+              <span data-spotlight="latest">最新刷新：2025.10.26</span>
+              <span data-spotlight="focus">最新项目：半程马拉松</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="stats-grid" aria-label="概览数据">
+        <article class="stat-card glass-panel">
+          <p class="stat-label">纪录总数</p>
+          <strong class="stat-value" data-stat="total">20</strong>
+          <p class="stat-note">男子 11 项，女子 9 项</p>
+        </article>
+
+        <article class="stat-card glass-panel">
+          <p class="stat-label">覆盖项目</p>
+          <strong class="stat-value" data-stat="projects">11</strong>
+          <p class="stat-note">从 800m 到全马，再到高百与巨人之旅</p>
+        </article>
+
+        <article class="stat-card glass-panel">
+          <p class="stat-label">最近更新</p>
+          <strong class="stat-value" data-stat="latest">2025.10.26</strong>
+          <p class="stat-note" data-stat-note="latest">徐文宇 · 半程马拉松</p>
+        </article>
+      </section>
+
+      <section class="records-section glass-panel" id="records">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">HONOR WALL</p>
+            <h2>纪录总览</h2>
+            <p class="section-text">
+            </p>
+          </div>
+
+          <div class="tab-list" role="tablist" aria-label="纪录分组">
+            <button class="tab-button is-active" type="button" data-group="all" aria-selected="true">
+              所有
+            </button>
+            <button class="tab-button" type="button" data-group="men" aria-selected="false">
+              男子中长跑
+            </button>
+            <button class="tab-button" type="button" data-group="women" aria-selected="false">
+              女子中长跑
+            </button>
+            <button class="tab-button" type="button" data-group="gaobai" aria-selected="false">
+              高百专项
+            </button>
+            <button class="tab-button" type="button" data-group="ultra" aria-selected="false">
+              特别挑战
+            </button>
+          </div>
+        </div>
+
+        <div id="board" class="board" aria-live="polite"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>北航马协点将台</span>
+      <span>维护by北京航空航天大学Vanter</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
